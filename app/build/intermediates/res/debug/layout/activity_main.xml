@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nanofaroque.capstone.activity.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/weather" />
+
+    <EditText
+        android:id="@+id/etCityState"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Enter your city and state" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bound_sync_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="runService"
+            android:text="@string/bound_sync_string" />
+
+        <Button
+            android:id="@+id/bound_async_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:onClick="runService"
+            android:text="@string/bound_async_string" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+<!-- From: file:/C:/Users/ofaro/AndroidStudioProjects/AildFinalProject/app/src/main/res/layout/activity_main.xml -->
